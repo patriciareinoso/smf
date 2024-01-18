@@ -24,8 +24,8 @@ type GTPTunnel struct {
 	SrcEndPoint  *DataPathNode
 	DestEndPoint *DataPathNode
 
-	TEID uint32
 	PDR  map[string]*PDR
+	TEID uint32
 }
 
 type DataPathNode struct {
@@ -46,13 +46,13 @@ type DataPathNode struct {
 }
 
 type DataPath struct {
+	// Data Path Double Link List
+	FirstDPNode *DataPathNode
+	Destination Destination
 	// meta data
 	Activated         bool
 	IsDefaultPath     bool
-	Destination       Destination
 	HasBranchingPoint bool
-	// Data Path Double Link List
-	FirstDPNode *DataPathNode
 }
 
 type DataPathPool map[int64]*DataPath
