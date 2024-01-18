@@ -128,7 +128,7 @@ type SMContext struct {
 	SMPolicyClient      *Npcf_SMPolicyControl.APIClient `json:"smPolicyClient,omitempty" yaml:"smPolicyClient" bson:"smPolicyClient,omitempty"`                // ?
 	CommunicationClient *Namf_Communication.APIClient   `json:"communicationClient,omitempty" yaml:"communicationClient" bson:"communicationClient,omitempty"` // ?
 
-	AMFProfile         models.NfProfile `json:"amfProfile,omitempty" yaml:"amfProfile" bson:"amfProfile,omitempty"` //30
+	AMFProfile         models.NfProfile `json:"amfProfile,omitempty" yaml:"amfProfile" bson:"amfProfile,omitempty"`
 	SelectedPCFProfile models.NfProfile `json:"selectedPCFProfile,omitempty" yaml:"selectedPCFProfile" bson:"selectedPCFProfile,omitempty"`
 	SmStatusNotifyUri  string           `json:"smStatusNotifyUri,omitempty" yaml:"smStatusNotifyUri" bson:"smStatusNotifyUri,omitempty"`
 
